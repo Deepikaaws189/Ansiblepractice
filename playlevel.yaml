@@ -1,5 +1,5 @@
 - name: play level variables
-  hosta: local
+  hosts: local
   connection: local
   tasks: #play levell variables
     - name: play level variables
