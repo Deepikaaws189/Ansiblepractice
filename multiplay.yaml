@@ -1,12 +1,12 @@
 - name: play1
-  hosta: local
+  hosts: local
   connection: local
   tasks: #play1
     - name: Hello from play1
       ansible.builtin.debug:
         msg: "Hello from play1"
 - name: play2
-  hosta: local
+  hosts: local
   connection: local
   tasks: #play2
     - name: Hello from play2
