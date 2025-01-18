@@ -8,7 +8,7 @@
   tasks: #play levell variables
     - name: play level variables
       vars:
-      course: Ansible
+        course: Ansible
       ansible.builtin.debug:
         msg: "Course is {{course}}, duration is {{duration}} and trainer is {{trainer}}"
     - name: play level variables
