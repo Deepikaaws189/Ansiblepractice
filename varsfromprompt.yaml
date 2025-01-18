@@ -1,0 +1,14 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: course
+    prompt: please enter course name
+  - name: duration
+    prompt: Please enter duration
+  - name: trainer
+    prompt: please enter trainer name
+  tasks: #play levell variables
+    - name: play level variables
+      ansible.builtin.debug:
+        msg: "Course is {{course}}, duration is {{duration}} and trainer is {{trainer}}"
