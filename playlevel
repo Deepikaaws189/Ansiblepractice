@@ -1,0 +1,7 @@
+- name: play level variables
+  hosta: local
+  connection: local
+  tasks: #play levell variables
+    - name: play level variables
+      ansible.builtin.debug:
+        msg: "Course is Devops with aws, duration is 120hrs and trainer is siva"
