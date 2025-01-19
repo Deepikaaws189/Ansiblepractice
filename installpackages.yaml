@@ -1,0 +1,13 @@
+- name: install packages
+  hosts: web
+  become: yes
+  tasks: #install packages
+    - name: install packages
+      ansible.builtin.package:
+        name:
+        state: installed
+      loop:
+        - git
+        - zip
+        - gcc
+        - mysql
